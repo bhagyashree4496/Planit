@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://planit-tan.vercel.app/api/auth/register",
         formData
       );
       localStorage.setItem("tokentodo", res.data.token);
