@@ -27,6 +27,9 @@ mongoose
 // Task routes
 app.use("/api/tasks", authenticateUser, Task);
 app.use("/api/auth", User);
+app.get("/", (req, res) => {
+  res.send("welcome to todo");
+});
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
