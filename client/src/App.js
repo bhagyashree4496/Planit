@@ -25,7 +25,7 @@ function App() {
     <div className="relative">
       <Router>
         {/* Header Section */}
-        <div className="px-8 py-8 md:h-[250px] App flex flex-col gap-16">
+        <div className="px-8 py-8 md:h-[250px] App flex flex-col gap-5 md:gap-16">
           <div className="flex justify-between items-center">
             {/* App Logo */}
             <h1 className="text-3xl font-bold mb-4">

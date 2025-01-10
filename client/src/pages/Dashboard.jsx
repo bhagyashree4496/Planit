@@ -89,7 +89,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="  p-8 relative">
+    <div className={` p-8 relative  }`}>
       {error && <p className="text-red-500">{error}</p>}
       {/* Task List */}
       {!tasks.length && !error ? (
@@ -102,7 +102,6 @@ const Dashboard = () => {
               className="flex justify-between items-center bg-white p-4 mb-2 rounded shadow"
             >
               <div>
-                {console.log(task)}
                 <h3 className="font-bold">{task.title}</h3>
                 <ul className="list-disc  ">
                   {task.points.map((point, index) => (
@@ -145,7 +144,7 @@ const Dashboard = () => {
           }
           setError("Please Login/Register before adding tasks.");
         }}
-        className="fixed top-36 right-8 bg-purple-200 border-[1px] border-purple-800 px-6 py-2 rounded-full hover:bg-purple-800 hover:text-white font-semibold hover:border-white text-xl"
+        className="fixed md:top-36 right-8 bottom-6 bg-purple-200 border-[1px] border-purple-800 px-6 py-2 rounded-full hover:bg-purple-800 hover:text-white font-semibold hover:border-white text-xs md:text-xl"
       >
         Add Task
       </button>
